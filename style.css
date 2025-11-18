@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #dfe9e4;
+}
+
+/* NAVIGATION BAR ON TOP OF BACKGROUND */
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* MAIN NAVBAR */
+.navbar {
+    width: 40%;
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 12px 25px;
+    background: rgba(104, 100, 100, 0.25);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+/* LEFT SIDE */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-left .logo {
+    width: 28px;
+}
+
+.nav-left ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: #3b4b3f;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.nav-left a:hover {
+    color: #1d281f;
+}
+
+/* SIGN UP BUTTON */
+.signup-btn {
+    padding: 10px 22px;
+    background: #4f6f56;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    background: #3b5841;
+}
+
+
+/* TABLETS */
+@media (max-width: 900px) {
+    .navbar {
+        width: 95%;
+        padding: 12px 20px;
+    }
+
+    .nav-left ul {
+        gap: 15px;
+    }
+
+    .signup-btn {
+        padding: 9px 20px;
+        font-size: 13px;
+    }
+}
+
+/* MOBILE NAVBAR (LOGO ↑ , MENU ↓ , BUTTON ↓) */
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+    .nav-left {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-left ul {
+        gap: 12px;
+    }
+
+    .signup-btn {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+}
+
+/* VERY SMALL PHONES */
+@media (max-width: 420px) {
+
+    .nav-left ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .signup-btn {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 15px;
+    }
+}
+
+/* HERO SECTION WITH BACKGROUND IMAGE */
+.hero {
+    height: 100vh;
+    background-image: url("image/design.PNG");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* TEXT ON TOP OF BACKGROUND */
+.content {
+    text-align: center;
+    max-width: 700px;
+    color: #1e2b20;
+    margin-top: 10px; 
+}
+
+.content h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.content h1 em {
+    font-family: "Georgia", serif;
+    font-weight: 400;
+    color: #4f6f56;
+}
+
+.content p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-top: 15px;
+    color: #2f3d31;
+}
+
+/* BUTTON */
+.start-btn {
+    margin-top: 30px;
+    display: inline-block;
+    padding: 14px 36px;
+    background: #577e5e;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.start-btn:hover {
+    background: #47684d;
+}
